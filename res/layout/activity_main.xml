@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.selectableroundedcornersimageview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <com.example.selectableroundedcornersimageview.SelectableRoundedCornersImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/koala"
+                app:leftBottomCornerRadius="6dp"
+                app:leftTopCornerRadius="6dp"
+                app:rightBottomCornerRadius="6dp"
+                app:rightTopCornerRadius="6dp" />
+
+            <com.example.selectableroundedcornersimageview.SelectableRoundedCornersImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/koala"
+                app:leftBottomCornerRadius="0dp"
+                app:leftTopCornerRadius="6dp"
+                app:rightBottomCornerRadius="0dp"
+                app:rightTopCornerRadius="6dp" />
+
+            <com.example.selectableroundedcornersimageview.SelectableRoundedCornersImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/koala"
+                app:leftBottomCornerRadius="6dp"
+                app:leftTopCornerRadius="0dp"
+                app:rightBottomCornerRadius="6dp"
+                app:rightTopCornerRadius="0dp" />
+
+            <com.example.selectableroundedcornersimageview.SelectableRoundedCornersImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/koala"
+                app:leftBottomCornerRadius="6dp"
+                app:leftTopCornerRadius="6dp"
+                app:rightBottomCornerRadius="0dp"
+                app:rightTopCornerRadius="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
